@@ -1,18 +1,20 @@
-MachineLearning how to use.ipynb(Backend API)
-Please use Jupyter notebook to run all cells (Use CUDA GPU especially for Llam2 fine tuning and ensure storage space is 500 gb (SDD) availability about 250GB is required for the commonspeech dataset training using Wav2Vec model by facebook for audio processing.We can skip the training for lack of space and time .Its already pretrained model on basic speech.But to avail all languages I have given this functionality for better voice clarity noise reduction in model.
+API for CV image summarization(backend)
 
-Also finetuning with llama langchain will be heavy on GPU H-100s are required.skip the cell if used in colab
+    Ensure you install all libraries given in pip install in .ipynb
+    Do run all the cells in this app
+    Finally get the generated public URL of ngrok server from the last running cell to be used as the Post APIin react app
+    Use GPU cuda or T4 or L4 GPU for running the cells.(For NLP only high machinery H-100s required)
 
-I have used some cells that can be skipped (mentioned as test)
+----------------------------------------------------------------------------------------------------------
 
-Finally the API cell will generate a ngrok public url for each of server instances.You need to change this every time in the react app in audioresponse.js.And also in app.js for text message chatbox.
-------------------------------------------------------------------------------------------------
+React App image -summarization
 
-React App Requirements:
+ install necessary libraries if not exist like
+npm axios
+npm react-load-spinner
+Finally give NPM start to start server on localhost://3000 it will ask other port if the port is busy with NLP app
+please make sure in imageupload.js change the public url of Generated ngrok every time you rerun the backend API.
 
-   Make sure you have installed npm and also installed react -min 12.6 or any even versions like 14 or 16 or 18
+---------------------------------------------------------------------------------------------------
 
-   Need to install certain libraries by NPM install the list of them are:
-
-npm install react-mic --force
-npm install react-loader-spinner --force
+Thank you follow these steps.feel free to reach out to me on 9566153921 if you have trouble running app.
