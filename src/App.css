@@ -1,0 +1,48 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.image-upload {
+  margin: 20px;
+}
+
+.image-upload input {
+  margin: 10px 0;
+}
+
+.image-upload button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-upload button:hover {
+  background-color: #21a1f1;
+}
+
+.summary-list {
+  margin: 20px;
+  text-align: left;
+}
+
+.summary-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
